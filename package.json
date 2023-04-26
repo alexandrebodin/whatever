@@ -1,0 +1,38 @@
+{
+  "name": "@alexandrebodin/whatever",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Alexandre Bodin <bodin.alex@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "files": [
+    "index.js",
+    "install.js",
+    "node-platform.js"
+  ],
+  "bin": {
+    "whatever": "bin.js"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "postinstall": "node install.js"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.rs": [
+      "rustfmt --"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
+  },
+  "optionalDependencies": {
+    "@alexandrebodin/whatever-darwin-arm64": "1.0.0"
+  },
+  "packageManager": "pnpm@8.3.1"
+}
