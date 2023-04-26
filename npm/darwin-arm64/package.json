@@ -1,0 +1,11 @@
+{
+  "name": "@alexandrebodin/whatever-darwin-arm64",
+  "version": "1.0.0",
+  "license": "MIT",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "arm64"
+  ]
+}
